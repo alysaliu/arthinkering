@@ -1,14 +1,68 @@
+@font-face {
+    font-family: "Blockhead";
+    src: url('fonts/blockhead/blockhead-regular.otf');
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
-    background-color: #ffffff;
-    font-family: Georgia, serif;
+    background: #2D2855;
+    background-image: image-set(
+    "stars.png" 1x,
+    "stars.png" 2x
+    );
+    background-repeat: repeat-x repeat-y;
+    font-family: "Blockhead", sans-serif;
 }
 
 h1 {
-    color: #333;
+    color: white;
+    text-align: center;
 }
 
 .content {
-    margin: 20px;
+    margin: auto;
     padding: 20px;
-    background-color: white;
+}
+
+.sticky-image {
+    position: fixed;
+    bottom: 20;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+
+.nav {
+    overflow: hidden;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+.footer {
+    background-color: #130F38; /* Dark background color */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    padding: 20px;
+    margin-bottom: -20px;
 }
